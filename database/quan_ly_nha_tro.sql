@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 16, 2026 lúc 10:52 AM
+-- Thời gian đã tạo: Th6 16, 2026 lúc 12:55 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.0.30
 
@@ -79,7 +79,8 @@ CREATE TABLE `nguoi_thue` (
 
 INSERT INTO `nguoi_thue` (`ma_nguoi_thue`, `ho_ten`, `so_dien_thoai`, `email`, `cccd`, `dia_chi`, `ma_phong`, `ngay_bat_dau`, `ngay_ket_thuc`, `ngay_tao`) VALUES
 (1, 'Nguyễn Văn A', '0911111111', 'vana@gmail.com', '123456789', 'Trà Vinh', 1, '2026-01-01', '2026-12-31', '2026-06-15 10:34:32'),
-(2, 'Trần Thị B', '0922222222', 'thib@gmail.com', '987654321', 'Vĩnh Long', 3, '2026-03-15', '2027-03-15', '2026-06-15 10:34:32');
+(2, 'Trần Thị B', '0922222222', 'thib@gmail.com', '987654321', 'Vĩnh Long', 3, '2026-03-15', '2027-03-15', '2026-06-15 10:34:32'),
+(3, 'Ngoc Tran', '0922222222', 'tran@gmail.com', '0909090909', 'trà vinh', 4, '2026-06-16', '2030-11-16', '2026-06-16 10:20:50');
 
 -- --------------------------------------------------------
 
@@ -107,7 +108,7 @@ INSERT INTO `phong_tro` (`ma_phong`, `ma_so_phong`, `ten_phong`, `tang`, `dien_t
 (1, 'P101', 'Phòng 101', 1, 20, 1500000.00, 'Đang thuê', 'Phòng có gác lửng', '2026-06-15 10:34:32'),
 (2, 'P102', 'Phòng 102', 1, 18, 1300000.00, 'Trống', 'Phòng gần cổng', '2026-06-15 10:34:32'),
 (3, 'P201', 'Phòng 201', 2, 22, 1700000.00, 'Đang thuê', 'Phòng có ban công', '2026-06-15 10:34:32'),
-(4, 'P202', 'Phòng 202', 2, 20, 1500000.00, 'Đang sửa chữa', 'Đang sửa hệ thống nước', '2026-06-15 10:34:32');
+(4, 'P202', 'Phòng 202', 2, 20, 1500000.00, 'Đang thuê', 'Đang sửa hệ thống nước', '2026-06-15 10:34:32');
 
 -- --------------------------------------------------------
 
@@ -180,7 +181,7 @@ ALTER TABLE `hoa_don`
 -- AUTO_INCREMENT cho bảng `nguoi_thue`
 --
 ALTER TABLE `nguoi_thue`
-  MODIFY `ma_nguoi_thue` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ma_nguoi_thue` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `phong_tro`
